@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tercer proyecto</title>
+
+    <link rel="stylesheet" href="./css\style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+</head>
+
+<body class="mx-auto">
+    <header id="site-header" class="bg-primary">
+        <div id="sit-header-sub" class="text-white d-flex justify-content-start align-items-center mx-auto px-5">
+
+            <div id="location" class="col-m2-6 col-lg-5 " >
+                <i class="bi-geo-alt me-2"></i> <span>C/ Hortensia, 1B, 28002 Madrid, España</span>
+            </div>
+
+            <div id="mailadress" class="col-md-6 col-lg-5"><i class="bi-envelope ms-4"></i><span class="ms-45"> info@caritas.com</span>
+            </div>
+            <div class="col-lg-1 d-none"></div>
+
+            <ul id="social-icon-list" class="text-white list-unstyled d-lg-flex  d-none pe-3 me-5">
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-twitter text-white"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-facebook text-white"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-instagram text-white"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-youtube text-white"></a>
+                </li>
+
+                <li class="social-icon-item">
+                    <a href="#" class="social-icon-link bi-whatsapp text-white"></a>
+                </li>
+            </ul>
+        </div>
+        </div>
+
+        <!----------------- Navbar header ------------------>
+
+        <div id="header-navbar" class="d-block sticky-wrapper ">
+            <nav class="navbar navbar-expand-lg bg-white shadow-lg px-5 py-0">
+                <div id="navbar-container" class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="image-logo" src="./images/logocaritas.png" class="logo img-fluid pe-0"
+                            alt="Kind Heart Charity">
+
+                    </a>
+                    <p id="web-name"><span class="name1 fs-4 text-primary">
+                            CARITAS </span><br>
+                        <span class="name2 text-secondary"> Sin animo de lucro</span>
+                        </span>
+                    </p>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav  ms-auto ">
+                            <li class="nav-item px-3">
+                                <a id="home-navbar" class="nav-link click-scroll active" href="#top">Home</a>
+                            </li>
+
+                            <li id="about-li" class="nav-item px-2">
+                                <a class="nav-link click-scroll inactive" href="#section_2">Sobre Nosotros</a>
+                            </li>
+
+                            <li class="nav-item px-2">
+                                <a class="nav-link click-scroll inactive" href="#section_3">Causas</a>
+                            </li>
+
+                            <li class="nav-item px-2">
+                                <a class="nav-link click-scroll inactive" href="#section_4">Voluntariado</a>
+                            </li>
+
+                            <li class="nav-item dropdown px-2">
+                                <a class="nav-link click-scroll dropdown-toggle inactive" href="#section_5"
+                                    id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Noticias</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light"
+                                    aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="news.html">Lista de Noticias</a></li>
+
+                                    <li><a class="dropdown-item" href="news-detail.html">Detalles</a></li>
+                                </ul>
+                            </li>
+
+                            <li id="contact-li" class="nav-item px-2">
+                                <a class="nav-link click-scroll inactive" href="#section_6">Contacto</a>
+                            </li>
+
+                            <li class="nav-item ms-3 px-0">
+                                <a id="donate-button" class="nav-link custom-btn custom-border-btn btn inactive"
+                                    href="donate.html">Donar</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+
+    <!-- Carousel -->
+
+    <section id="sub-body">
+        <div id="carousel-caritas" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item carousel-item-1 active">
+                    <img class="ima carousel-image carousel-image-1 img-fluid"
+                        src="./images/slide/medium-shot-people-collecting-donations.jpg" alt="">
+                    <div class="desc-carousel">
+                        <div class="desc-carousel-subdiv">
+                            <h1 class="desc-carousel-h1">Hazte donante</h1>
+
+                            <p class="desc-carousel-p">Contribuye a la labor solidaria</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-item-1">
+                    <img class="ima carousel-image-1 img-fluid"
+                        src="./images/slide/volunteer-helping-with-donation-box.jpg" alt="">
+                    <div class="desc-carousel">
+                        <div class="desc-carousel-subdiv">
+                            <h1 class="desc-carousel-h1">Solidaridad</h1>
+
+                            <p class="desc-carousel-p">Comparte esta web con tus amigos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item carousel-item-1">
+                    <img class="ima carousel-image-1 img-fluid"
+                        src="./images/slide/volunteer-selecting-organizing-clothes-donations-charity.jpg" alt="">
+                    <div class="desc-carousel">
+                        <div class="desc-carousel-subdiv">
+                            <h1 class="desc-carousel-h1 fs-1">No lucrativo</h1>
+
+                            <p class="desc-carousel-p">Puedes ayudar a nuestro crecimiento</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev carousel-control-prev-1" type="button"
+                    data-bs-target="#carousel-caritas" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon carousel-control-prev-icon-1" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next carousel-control-next-1" type="button"
+                    data-bs-target="#carousel-caritas" data-bs-slide="next">
+                    <span class="carousel-control-next-icon carousel-control-next-icon-1" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- welcome-section -->
+
+    <section id="welcome-section" class="welcome-section py-5 row">
+
+        <div class="container pt-3 py-5">
+            <h1 class="text-center text-secondary px-4 py-4">Bienvenido a la gente solidaria</h1>
+
+            <div id="container-welcome-box" class="container d-flex justify-content-around pb-5">
+                <div class="welcome-box col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <img class="welcome-image mt-5" src="./images/icons/hands.png" alt="">
+                    <p class="welcome-subdesc text-center text-primary py-4">Conviertete en <strong>Voluntario</strong>
+                        </h2>
+                </div>
+
+                <div class="welcome-box col-lg-3 col-md-6 col-12 d-flex  justify-content-center align-items-center">
+                    <img class="welcome-image mt-5" src="./images/icons/heart.png" alt="">
+                    <p class="welcome-subdesc text-center text-primary py-4">Cuida el <strong>Planeta</strong></h2>
+                </div>
+
+                <div class="welcome-box col-lg-3 col-md-6 col-12 d-flex justify-content-center align-items-center">
+                    <img class="welcome-image mt-5" src="./images/icons/receive.png" alt="">
+                    <p class="welcome-subdesc text-center text-primary py-4">Haz una <br><strong>Donación</strong></h2>
+                </div>
+
+                <div class="welcome-box col-lg-3 col-md-6 col-12  d-flex justify-content-center align-items-center">
+                    <img class="welcome-image mt-5" src="./images/icons/scholarship.png" alt="">
+                    <p class="welcome-subdesc text-center text-primary py-4"><strong>Programa</strong> <br>de
+                        voluntariado</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- our-story-section -->
+
+
+    <section id="our-story">
+        <div class="our-story py-5 mx-4 container-xl mx-auto">
+
+            <div class="our-image m-3"> <img class="our-image-img"
+                    src="./images/group-people-volunteering-foodbank-poor-people.jpg" alt=""></div>
+
+            <div class="our-story-def m-3 rounded-5 bg-white">
+                <h1 class="ms-5 me-5 mt-4 text-secondary">Nuestra historia</h1>
+
+                <h2 class="ms-5 me-5 mt-2 fs-4 text-primary">Organización Solidaria, Sin animo de lucro</h2>
+                <p class="ms-5 me-5 mt-3  text-secondary">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book.</p>
+            </div>
+
+
+            <div class="our-mission m-3 rounded-5 bg-white">
+                <h4 class="ms-5 mt-4 text-primary">Nuestra Misión</h2>
+                    <p class="ms-5 me-5 pt-2 text-secondary">Sed leo nisl, posuere at molestie ac, suscipit auctor quis
+                        metus</p>
+                    <ul class="custom-list mt-2 ms-3 text-secondary">
+                        <li class="custom-list-item d-flex fs-5">
+                            <i class="bi-check rounded-circle px-1 custom-text-box-icon"></i>
+                            &nbspTema Solidario
+                        </li>
+
+                        <li class="custom-list-item d-flex mt-2 fs-5 bg-white">
+                            <i class="bi-check rounded-circle px-1 custom-text-box-icon"></i>
+                            &nbspHTML Semántico
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="our-stats m-3 rounded-5 bg-white">
+                <p class="mb-2"><span class="h1-stat text-primary">2009</span> <br> <span
+                        class="h2-stat text-secondary">Founded</span></p>
+                <p><span class="h1-stat text-primary">12M</span> <br> <span
+                        class="h2-stat text-secondary">Donaciones</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- staff-section -->
+
+
+    <section id="staff-section">
+        <div class="staff-section d-flex">
+
+            <div class="image-staff col col-md-4 me-3 rounded-5">
+                <img class="img-fluid" src="./images/portrait-volunteer-who-organized-donations-charity.jpg" alt="">
+            </div>
+
+            <div class="staff-desc col col-md-4 ms-5 d-flex">
+                <h1 class="text-secondary pt-5">Conchita Perez</h1>
+                <h5 class="text-secondary">Socia Co-Fundadora</h5>
+                <p class="text-secondary mt-3 me-3">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm
+                    tokito
+                    Professional charity theme
+                    based
+                </p>
+                <p class="text-secondary me-3"> You are not allowed to redistribute this template ZIP file on any other
+                    template collection website.
+                    Please contact TemplateMo for more information.
+                </p>
+
+                <ul class="social-icon mt-4 mb-0 list-unstyled d-flex">
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-twitter me-2  bg-secondary text-white"></a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-facebook me-2  bg-secondary text-white"></a>
+                    </li>
+
+                    <li class="social-icon-item">
+                        <a href="#" class="social-icon-link bi-instagram me-2 bg-secondary text-white"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Separator-banner-section -->
+
+    <section>
+        <div id="separator-banner-section-div">
+
+            <div class="row-separator">
+                <div id="circle-separator-banner-1"></div>
+            </div>
+
+            <div id="separator-banner-section"
+                class="container-xl col-10 mx-auto d-flex justify-content-between align-items-center">
+
+                <div id="impact-banner-section" class="">
+                    <p class="text-secondary ms-5 fs-1 fw-bold ">Crear impacto <br> Salvando Vidas.</p>
+                </div>
+
+                <div id="donator-banner-section" class="d-flex align-items-center">
+                    <p id="p-donacion" class="me-5 text-secondary">Haz una Donación</p>
+                    <p class="btn btn-secondary" href="#">Conviertete en Voluntario</p>
+                </div>
+            </div>
+            <div class="row-separator">
+                <div id="circle-separator-banner-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our-Causes-Section -->
+
+    <section>
+
+        <div id="our-causes-section" class="container-xl py-5">
+
+            <div class="text-center mt-5 pb-4 text-secondary">
+                <h1 class="display-5 fw-bold">
+                    Nuestra Causa
+                </h1>
+            </div>
+
+            <div id="card-container-our-causes-section" class="d-flex justify-content-between pt-1 pb-5">
+
+                <div class="card-our-causes-section card">
+                    <img class="card-img" src="./images/causes/group-african-kids-paying-attention-class.jpg" alt="">
+                    <h2 class="card-tittle text-primary fs-4 mt-4 ms-4">Educación Infantil</h1>
+                        <p class="card-text mt-2 ms-4 me-5 text-secondary">Lorem Ipsum dolor sit amet, consectetur
+                            adipsicing kengan omeg kohm tokito
+                        </p>
+                        <div>
+                            <div class="progress mx-4 mt-2">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 75%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress-desc mx-4 mt-1 pb-4 d-flex justify-content-between text-secondary">
+                                <div><strong>Donado:</strong> $18,500</div>
+                                <div><strong>Meta</strong> $32,000</div>
+                            </div>
+                        </div>
+                        <div class="card-footer mt-1 py-2 text-center bg-secondary text-white fs-5"> Donar </div>
+                </div>
+
+                <div class="card-our-causes-section card">
+                    <img class="card-img" src="./images/causes/poor-child-landfill-looks-forward-with-hope.jpg" alt="">
+                    <h2 class="card-tittle text-primary fs-4 mt-4 ms-4">Desarrollo</h1>
+                        <p class="card-text mt-2 ms-4 me-5 text-secondary">Lorem Ipsum dolor sit amet, consectetur
+                            adipsicing kengan omeg kohm tokito
+                        </p>
+                        <div>
+                            <div class="progress mx-4 mt-2">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 32%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress-desc mx-4 mt-1 pb-4 d-flex justify-content-between text-secondary">
+                                <div><strong>Donado:</strong> $16,000</div>
+                                <div><strong>Meta</strong> $60,000</div>
+                            </div>
+                        </div>
+                        <div class="card-footer mt-1 py-2 text-center bg-secondary text-white fs-5"> Donar </div>
+                </div>
+
+                <div class="card-our-causes-section card">
+                    <img class="card-img" src="./images/causes/african-woman-pouring-water-recipient-outdoors.jpg"
+                        alt="">
+                    <h2 class="card-tittle text-primary fs-4 mt-4 ms-4">Agua Potable</h1>
+                        <p class="card-text mt-2 ms-4 me-5 text-secondary">Lorem Ipsum dolor sit amet, consectetur
+                            adipsicing kengan omeg kohm tokito
+                        </p>
+                        <div>
+                            <div class="progress mx-4 mt-2">
+                                <div class="progress-bar bg-secondary" role="progressbar" style="width: 90%"
+                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="progress-desc mx-4 mt-1 pb-4 d-flex justify-content-between text-secondary">
+                                <div><strong>Donado:</strong> $18,900</div>
+                                <div><strong>Meta</strong> $22,000</div>
+                            </div>
+                        </div>
+                        <div class="card-footer mt-1 py-2 text-center bg-secondary text-white fs-5"> Donar </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Section -->
+
+    <section class="bg-secondary">
+        <div id="volunteer-section" class="container-xl d-flex justify-content-around py-5">
+
+            <div id="volunteer-div" class="col-md-6 pt-5 pb-md-5">
+                <h1 id="volunteer-div-h1" class="text-white pb-4"> Voluntariado</h1>
+                <div id="volunteer-form" class="bg-white p-5">
+                    <h2 class="pb-3"> Conviertete hoy en Voluntario</h1>
+                        <form id="formulary">
+                            <div id="formu-div-sup" class="row d-flex justify-content-between">
+                                <div class="formu-div col-6">
+                                    <input type="text" class="" placeholder="Nombre">
+                                </div>
+                                <div class="formu-div col-6">
+                                    <input type="text" class="" placeholder="Correo electronico">
+                                </div>
+                                <div class="formu-div col-6">
+                                    <input type="text" class="" placeholder="Asunto">
+                                </div>
+                                <div id="formu-div-file" class="formu-div col-6 d-flex justify-content-between">
+                                    <p id="text-input-file"></p>
+                                    <input id="input-file" type="file" class="" placeholder="Sube tu CV">
+                                    <i id="symbol-upload" class="bi-cloud-arrow-up fs-4 text-secondary"></i>
+                                </div>
+                            </div>
+
+                            <div class="formu-ta mt-4">
+                                <textarea class="form-control" name="volunteer-messagge" id="" cols="30" rows="3"
+                                    placeholder="Comentario (Opcional)"></textarea>
+                            </div>
+                        </form>
+                        <input id="formu-btn" type="button" class="btn btn-secondary mt-4 col-12 text-white"
+                            value="Enviar">
+                </div>
+            </div>
+
+            <div id="about-volunteer-div" class="col-md-4 text-center text-white">
+                <img class="mt-3 ms-md-3" src="./images/smiling-casual-woman-dressed-volunteer-t-shirt-with-badge.jpg"
+                    alt="">
+                <h2 class="mt-4">Ser voluntario</h2>
+                <p class="mt-3">Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito adipsicing
+                    kengan omeg
+                    kohm</p>
+            </div>
+    </section>
+
+    <!-- News-section -->
+
+    <section>
+
+        <div id="news-div-sup" class="container-xl d-flex pb-5">
+            <div id="news-div" class="mt-5 px-3 pb-lg-5 col col-md-7">
+
+                <h1 class="pt-lg-5 text-secondary">Ultimas Noticias</h1>
+
+                <div class="new-article">
+                    <div id="a" class="news-block-top">
+                        <a href="#">
+                            <img src="./images/news/medium-shot-volunteers-with-clothing-donations.jpg"
+                                class="news-image img-fluid" alt="">
+                        </a>
+
+                        <div class="news-category-block bg-secondary py-2 text-white">
+                            <a href="#" class="category-block-link ms-4">
+                                Lifestyle,
+                            </a>
+
+                            <a href="#" class="category-block-link ms-2">
+                                Donar Ropa
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-block-info mt-3 text-secondary">
+                        <div class="d-flex mt-2">
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    Octubre 12, 2020
+                                </p>
+                            </div>
+
+                            <div class="news-block-author mx-5">
+                                <p>
+                                    <i class="bi-person custom-icon me-1"></i>
+                                    Carlos Perez
+                                </p>
+                            </div>
+
+                            <div class="news-block-comment">
+                                <p>
+                                    <i class="bi-chat-left custom-icon me-1"></i>
+                                    32 Comentarios
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-block-title pt-1 mb-2 text-black">
+                            <h3>Donación de Ropa</h3>
+                        </div>
+
+                        <div class="news-block-body">
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional
+                                charity theme based on Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="new-article">
+                    <div id="a" class="news-block-top">
+                        <a href="#">
+                            <img src="./images/news/medium-shot-people-collecting-foodstuff.jpg"
+                                class="news-image img-fluid" alt="">
+                        </a>
+
+                        <div class="news-category-block bg-secondary py-2 text-white">
+                            <a href="#" class="category-block-link ms-4">
+                                Comida,
+                            </a>
+
+                            <a href="#" class="category-block-link ms-2">
+                                Caridad
+                            </a>
+                        </div>
+                    </div>
+                    <div class="news-block-info mt-3 text-secondary">
+                        <div class="d-flex mt-2">
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    Junio 16, 2021
+                                </p>
+                            </div>
+
+                            <div class="news-block-author mx-5">
+                                <p>
+                                    <i class="bi-person custom-icon me-1"></i>
+                                    Laura Sanz
+                                </p>
+                            </div>
+
+                            <div class="news-block-comment">
+                                <p>
+                                    <i class="bi-chat-left custom-icon me-1"></i>
+                                    21 Comentarios
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="news-block-title pt-4 mb-2 text-black">
+                            <h3>Donación de Comida</h3>
+                        </div>
+
+                        <div class="news-block-body">
+                            <p>Lorem Ipsum dolor sit amet, consectetur adipsicing kengan omeg kohm tokito Professional
+                                charity theme based on Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--  -->
+
+            <div id="news-bar" class="col col-md-4 px-4 px-md-2 ms-md-5">
+                <div id="news-search" class="d-flex py-2 text-secondary justify-content-between">
+                    <input type="text" id="finder-news" class="col-11 ms-2 text-secondary" placeholder="Buscar">
+                    <i  id="symbol-find" class="bi bi-search"></i>
+                </div>
+
+                <div id="news-recents-news" class="py-5">
+
+                    <h3 class="text-primary">Noticias recientes</h3>
+
+                    <div class="mini-new d-flex mt-4 pt-2">
+                        <div class="news-block-two-col-image-wrap col-5">
+                            <a href="">
+                                <img src="./images/news/africa-humanitarian-aid-doctor.jpg" class="news-image img-fluid"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="news-block-two-col-info ps-3">
+                            <div class="news-block-title mb-2">
+                                <h6><a href="" class="news-block-title-link fs-4">Donde donar comida</a></h6>
+                            </div>
+
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    Octubre 16, 2036
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mini-new d-flex mt-2 py-2">
+                        <div class="news-block-two-col-image-wrap col-5">
+                            <a href="">
+                                <img src="./images/news//close-up-happy-people-working-together.jpg"
+                                    class="news-image img-fluid" alt="">
+                            </a>
+                        </div>
+                        <div class="news-block-two-col-info ps-3">
+                            <div class="news-block-title mb-2">
+                                <h6><a href="" class="news-block-title-link fs-4">El buen donante</a></h6>
+                            </div>
+
+                            <div class="news-block-date">
+                                <p>
+                                    <i class="bi-calendar4 custom-icon me-1"></i>
+                                    Julio 11, 2028
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="news-categories" class="">
+
+                    <h3 class="text-primary pb-2">Categorias</h3>
+
+                    <div id="categories-list" class="d-flex">
+                        <a href="#" class="category-block-link">
+                            Agua Potable
+                            <span class="badge bg-secondary">20</span>
+                        </a>
+
+                        <a href="#" class="category-block-link">
+                            Donar Comida
+                            <span class="badge bg-secondary">30</span>
+                        </a>
+
+                        <a href="#" class="category-block-link">
+                            Educación Infantil
+                            <span class="badge bg-secondary">10</span>
+                        </a>
+
+                        <a href="#" class="category-block-link">
+                            Desarrollo
+                            <span class="badge bg-secondary">15</span>
+                        </a>
+
+                        <a href="#" class="category-block-link">
+                            Donar Ropa
+                            <span class="badge bg-secondary">20</span>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div id="news-tags" class="py-4">
+
+                    <h3 class="text-primary pt-3">Tags</h3>
+
+                    <div class="tags-block pt-3">
+
+                        <a href="#" class="tags-block-link">
+                            Donaciones
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Ropa
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Comida
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Infantil
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Educación
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Desarollo
+                        </a>
+
+                        <a href="#" class="tags-block-link">
+                            Agua potable
+                        </a>
+                    </div>
+
+                </div>
+
+                <div id="new-newsletter-form" class="px-4 py-3 mt-4">
+
+                    <h4 class="text-primary py-3">Newsletter</h4>
+
+                    <input type="email" class="form-control px-2 py-2 my-2 col-12" placeholder="Correo Electrónico">
+
+                    <button class="col-12 my-3 btn text-white">Suscribirme</button>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact-section -->
+
+    <section id="contact-section" class="py-lg-5 pb-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0 mt-4 mt-lg-5 pt-lg-4">
+                    <div id="contact-info-wrap">
+                        <h2 class="text-secondary py-2">A tu servicio</h2>
+
+                        <div class="contact-image-wrap pt-3 pb-4 d-flex flex-wrap">
+                            <img src="./images/avatar/pretty-blonde-woman-wearing-white-t-shirt.jpg"
+                                class="img-fluid avatar-image" alt="">
+
+                            <div class="d-flex flex-column justify-content-center ms-3">
+                                <p class="mb-0">Clara Lago</p>
+                                <p class="mb-0"><strong>Jefa de recursos humanos</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info pt-3 text-secondary">
+                            <h5 class="mb-3 text-primary">Información</h5>
+
+                            <p class="d-flex mb-2">
+                                <i class="bi-geo-alt me-2"></i>
+                                C/ Hortensia, 1B, 28002 Madrid, España
+                            </p>
+
+                            <p class="d-flex mb-2">
+                                <i class="bi-telephone me-2"></i>
+
+                                <a href="tel: 120-240-9600">
+                                    120-240-9600
+                                </a>
+                            </p>
+
+                            <p class="d-flex">
+                                <i class="bi-envelope me-2"></i>
+
+                                <a href="mailto:info@yourgmail.com">
+                                    info@caritas.com
+                                </a>
+                            </p>
+
+                            <button class="btn btn-secondary mt-2">Copiar dirección</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 col-12 mx-auto bg-white rounded-lg-5">
+                    <form class="custom-form contact-form m-4" action="#" method="post" role="form">
+                        <h2 class="text-secondary pt-3">Contact form</h2>
+
+                        <p class="mb-4">O puedes enviarnos un email a:
+                            <a href="#">info@caritas.org</a>
+                        </p>
+                        <div class="row mb-3">
+                            <div class="col-lg-6 col-md-6 col-12 mb-3">
+                                <input type="text" name="first-name" id="first-name" class="form-control p-3"
+                                    placeholder="Nombre" required>
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <input type="text" name="last-name" id="last-name" class="form-control p-3"
+                                    placeholder="Apellidos" required>
+                            </div>
+                        </div>
+
+                        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"
+                            class="form-control mb-3 p-3" placeholder="ejemplo@gmail.com" required>
+
+                        <textarea name="message" rows="5" class="form-control p-3 mb-3" id="message"
+                            placeholder="¿En qué puedo ayudarte?"></textarea>
+
+                        <button type="submit" class="form-control btn btn-secondary">Enviar mensaje</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="site-footer">
+        <div id="footer-top" class="container py-5 ps-5 mx-auto">
+            <div class="row pt-4">
+                <div id="img-footer-div" class="col-lg-3 col-12">
+                    <img src="./images/Logo-Caritas-PNG.png" class="logo img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                    <h5 class="site-footer-title mb-3 text-primary">Quick Links</h5>
+
+                    <ul id="li-footer" class="footer-menu">
+                        <li class="footer-menu-item"><a href="#our-story" class="footer-menu-link">Nuestra historia</a>
+                        </li>
+
+                        <li class="footer-menu-item"><a href="#news-div-sup" class="footer-menu-link">Noticias</a></li>
+
+                        <li class="footer-menu-item"><a href="#our-causes-section" class="footer-menu-link">Nuestra
+                                causa</a></li>
+
+                        <li class="footer-menu-item"><a href="#volunteer-section" class="footer-menu-link">Conviertete
+                                en voluntario</a></li>
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Se mienbro</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12 mx-auto">
+                    <h5 class="site-footer-title mb-3 text-primary">Información de Contacto</h5>
+
+                    <p class="text-white d-flex mb-2">
+                        <i class="bi-telephone me-2"></i>
+
+                        <a href="tel: 120-240-9600" class="site-footer-link">
+                            120-240-9600
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <i class="bi-envelope me-2"></i>
+
+                        <a href="mailto:info@yourgmail.com" class="site-footer-link">
+                            donar@caritas.org
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex mt-3">
+                        <i class="bi-geo-alt me-2"></i>
+                        C/ Hortensia, 1, 28002 Madrid, España
+                    </p>
+
+                    <button class="btn text-white">Copiar dirección</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="site-footer-bottom bg-secondary pt-5 pb-0 pt-md-4 pb-md-4">
+            <div class="container">
+                <div class="row">
+
+                    <div class=" col-lg-6 col-md-7 col-12 me-3 mx-md-0">
+                        <p class="copyright-text mb-0 text-warning"> Copyright © 2022 <a href="#">Caritas Web</a> por Juan Jesús César <a href="#" target="_blank"></a></p>
+                    </div>
+
+                    <div class="col-lg-6 col-md-5 col-120 mt-md-0 mt-4 d-flex justify-content-center align-items-center mx-auto">
+                        <ul class="social-icon d-flex">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-facebook"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-linkedin"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="https://youtube.com/templatemo" class="social-icon-link bi-youtube"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src=".\js\jquery.min.js"></script>
+    <script type="text/javascript" src=".\js\jquery.sticky.js"></script>
+    <script type="text/javascript" src=".\js\bootstrap.bundle.js"></script>
+    
+</body>
+
+</html>
