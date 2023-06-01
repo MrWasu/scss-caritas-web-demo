@@ -1,0 +1,41 @@
+.staff-section {
+    justify-content: center;
+    padding: 100px 0 150px 0;
+
+    .image-staff {
+        width: 350px;
+        height: 400px;
+        overflow: hidden;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+
+        img {
+            margin: -20% 0;
+        }
+    }
+
+    .staff-desc {
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h1 {
+            font-size: 46px;
+        }
+
+        h5 {
+            font-weight: normal;
+        }
+
+        ul li a {
+            padding: 9px 12px;
+            border-radius: 100px;
+            font-size: 14px;
+            position: relative;
+            top: -10px;
+            transition: 300ms;
+        }
+
+        ul li a:hover {
+            background-color: $primary !important;
+        }
+    }
+}

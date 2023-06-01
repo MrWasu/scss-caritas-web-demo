@@ -1,0 +1,82 @@
+#volunteer-section {
+
+    #volunteer-div {
+
+        #volunteer-form {
+            border-radius: 20px;
+
+            #formu-div-sup {
+                width: 100%;
+                margin: 0;
+
+                .formu-div {
+                    width: 47%;
+                    margin-top: 20px;
+                    background-color: #f0f8ff;
+                    border-radius: 5px;
+
+                    input {
+                        padding: 15px 0px;
+                        border: none;
+                        background-color: #f0f8ff;
+                        outline: none;
+                    }
+
+                    #text-input-file::before {
+                        content: 'Sube tu CV';
+                        position: absolute;
+                        margin-top: 15px;
+                        cursor: pointer;
+                    }
+
+                    #input-file {
+                        background-color: $primary;
+                        opacity: 0;
+                        display: inline-block;
+                        cursor: pointer;
+                    }
+                }
+
+                #symbol-upload {
+                    position: relative;
+                    right: 8%;
+                    align-self: center;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                border: none;
+                border-radius: 5px;
+                background-color: #f0f8ff;
+            }
+        }
+
+        #formu-btn {
+            padding: 14px 0px;
+            border-radius: 30px;
+            transition: 300ms;
+            font-weight: bold;
+        }
+
+        #formu-btn:hover {
+            background-color: $primary;
+        }
+    }
+
+    #formu-div-file {
+        cursor: pointer;
+    }
+
+    #about-volunteer-div {
+
+        align-self: center;
+
+        img {
+            height: 300px;
+            width: 300px;
+            object-fit: cover;
+            border-radius: 100%;
+        }
+    }
+}

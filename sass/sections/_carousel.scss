@@ -1,0 +1,67 @@
+#carousel-caritas {
+
+    .carousel-item-1 {
+        height: 681px;
+        min-height: 680px;
+        justify-content: flex-end;
+
+        .carousel-image-1 {
+            width: 100%;
+            min-height: 680px;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .desc-carousel {
+            height: 520px;
+            width: 700px;
+            text-align: end;
+            position: absolute;
+            right: 0px;
+            bottom: -2px;
+            color: $secondary;
+            background-color: #ffffff;
+            clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+            .desc-carousel-subdiv {
+                position: relative;
+                bottom: -350px;
+                right: 14%;
+
+                .desc-carousel-h1 {
+                    font-size: 50px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    .carousel-control-prev-icon-1,
+    .carousel-control-next-icon-1 {
+        opacity: 0;
+        width: 80px;
+        height: 80px;
+        transition: 300ms;
+        background-color: $secondary;
+        background-size: 60%;
+        border-radius: 50px;
+    }
+}
+
+#carousel-caritas:hover {
+
+    .carousel-control-prev-1,
+    .carousel-control-next-1 {
+        opacity: 1;
+
+        .carousel-control-prev-icon-1,
+        .carousel-control-next-icon-1 {
+            opacity: 1;
+        }
+
+        .carousel-control-prev-icon-1:hover,
+        .carousel-control-next-icon-1:hover {
+            background-color: $primary;
+        }
+    }
+}

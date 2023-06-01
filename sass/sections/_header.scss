@@ -1,0 +1,76 @@
+/*  Header */
+header {
+    height: 50px;
+    max-width: 100%;
+    align-items: center;
+
+    #sit-header-sub {
+        max-width: 1200px;
+        height: 45px;
+        font-size: 15px;
+    }
+
+    #social-icon-div {
+        float: right;
+    }
+
+    #social-icon-list {
+        position: relative;
+        top: 9px;
+        margin-right: 1px;
+        text-align: right;
+
+        li {
+            margin: 10%
+        }
+    }
+}
+
+#header-navbar {
+    height: 90px;
+    z-index: 2 !important;
+    position: relative;
+
+    #navbar-container {
+        max-width: 1200px;
+    }
+
+    #image-logo {
+        height: 80px;
+        padding: 10px;
+    }
+
+    #web-name {
+        font-weight: bolder;
+        line-height: 20px;
+        vertical-align: middle;
+        margin-bottom: 5px;
+
+        .name2 {
+            font-size: 11px;
+            text-transform: uppercase;
+        }
+    }
+
+    a {
+        font-size: 17px;
+    }
+
+    #home-navbar {
+        color: $primary;
+    }
+
+    #donate-button {
+        border: $secondary solid 2px;
+        border-radius: 23px;
+        padding-right: 25px;
+        padding-left: 25px;
+        transition: 300ms;
+    }
+
+    #donate-button:hover {
+        background-color: $primary;
+        border-color: #ffffff;
+        color: #ffffff;
+    }
+}

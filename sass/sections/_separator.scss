@@ -1,0 +1,53 @@
+#separator-banner-section-div {
+    background-color: #f0f8ff;
+    overflow: hidden;
+
+    .row-separator {
+        max-height: 100px;
+
+        #circle-separator-banner-1 {
+            position: relative;
+            top: -100px;
+            left: -2%;
+            background: $primary;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+        }
+
+        #circle-separator-banner-2 {
+            position: relative;
+            bottom: -50px;
+            left: 44%;
+            background: #f0f8ff;
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            border: $primary 20px solid;
+        }
+    }
+
+    #separator-banner-section {
+        max-height: 110px;
+        font-size: 16px;
+
+        .btn {
+            padding: 12px 20px;
+            border-radius: 200px;
+            font-size: 18px !important;
+            transition: 300ms;
+        }
+
+        .btn:hover {
+            background-color: $primary
+        }
+
+        #impact-banner-section {
+            margin-left: 7%;
+        }
+
+        #donator-banner-section {
+            width: 45%;
+        }
+    }
+}

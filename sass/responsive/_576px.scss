@@ -1,0 +1,59 @@
+@media (max-width: 576px) {
+
+    #sit-header-sub {
+        padding-top: 5px;
+        min-height: 55px;
+        flex-direction: column;
+    }
+
+    #web-name {
+        display: none;
+    }
+
+    #carousel-caritas {
+
+        .carousel-control-prev-icon-1,
+        .carousel-control-next-icon-1 {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    .our-story {
+        grid-template-columns: 100%;
+        grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.8fr;
+
+        grid-template-areas:
+            "images"
+            "images"
+            "story"
+            "mission"
+            "stats";
+
+        h1 {
+            font-size: 30px;
+        }
+
+        .our-image {
+
+            height: 500px;
+
+            .our-image-img {
+                object-fit: cover;
+                max-height: none;
+            }
+        }
+
+        .our-stats {
+            text-align: center;
+        }
+    }
+
+    #separator-banner-section-div {
+        display: none;
+    }
+
+    #our-causes-section {
+        background-color: #f0f8ff;
+    }
+}

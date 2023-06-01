@@ -1,0 +1,102 @@
+.welcome-section {
+    position: relative;
+    top: 85px;
+
+    #container-welcome-box {
+
+
+        flex-wrap: wrap;
+
+        .welcome-box {
+            max-width: 15%;
+            border-radius: 30px;
+            float: left;
+            flex-direction: column;
+            font-size: 24px;
+            transition: all 500ms;
+
+            .welcome-image {
+                height: 128px;
+                width: 128px;
+                transition: 400ms;
+            }
+        }
+    }
+
+
+    .welcome-box:hover {
+        box-shadow: #00000059 0px 5px 15px;
+
+        .welcome-image {
+            scale: 0.8;
+        }
+    }
+}
+
+/* our-story-section */
+
+#our-story {
+    background-color: #f0f8ff;
+}
+
+.our-story {
+    background-color: #f0f8ff;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+
+    grid-template-areas:
+        "images images story story"
+        "images images mission stats";
+
+    h1 {
+        font-size: 45px;
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 17px;
+    }
+
+    .our-image {
+        grid-area: images;
+        overflow: hidden;
+        text-align: center;
+        border-radius: 5% !important;
+
+        .our-image-img {
+            border-radius: 5% !important;
+            object-fit: cover;
+            margin: 0 -50%;
+        }
+    }
+
+    .our-story-def {
+        grid-area: story;
+    }
+
+    .our-mission {
+        grid-area: mission;
+
+        .bi-check {
+            background-color: #f0f8ff;
+        }
+    }
+
+    .our-stats {
+        grid-area: stats;
+        padding: 40px 70px;
+        text-align: left;
+
+        .h1-stat {
+            font-size: 52px;
+            font-weight: bold;
+            line-height: 60px;
+            letter-spacing: 2px;
+        }
+
+        .h2-stat {
+            font-size: 18px;
+        }
+    }
+}

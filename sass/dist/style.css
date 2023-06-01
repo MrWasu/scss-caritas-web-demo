@@ -1,0 +1,806 @@
+@font-face {
+  font-family: "metropolis";
+  src: url("/fonts/Metropolis/Metropolis-Regular.woff") format(woff);
+  font-style: normal;
+  font-weight: normal;
+}
+body {
+  font-family: sans-serif;
+  font-size: 14px;
+  min-width: 390px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+
+/*  Header */
+/*  Header */
+header {
+  height: 50px;
+  max-width: 100%;
+  align-items: center;
+}
+header #sit-header-sub {
+  max-width: 1200px;
+  height: 45px;
+  font-size: 15px;
+}
+header #social-icon-div {
+  float: right;
+}
+header #social-icon-list {
+  position: relative;
+  top: 9px;
+  margin-right: 1px;
+  text-align: right;
+}
+header #social-icon-list li {
+  margin: 10%;
+}
+
+#header-navbar {
+  height: 90px;
+  z-index: 2 !important;
+  position: relative;
+}
+#header-navbar #navbar-container {
+  max-width: 1200px;
+}
+#header-navbar #image-logo {
+  height: 80px;
+  padding: 10px;
+}
+#header-navbar #web-name {
+  font-weight: bolder;
+  line-height: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+}
+#header-navbar #web-name .name2 {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+#header-navbar a {
+  font-size: 17px;
+}
+#header-navbar #home-navbar {
+  color: #cd222d;
+}
+#header-navbar #donate-button {
+  border: #5a6f80 solid 2px;
+  border-radius: 23px;
+  padding-right: 25px;
+  padding-left: 25px;
+  transition: 300ms;
+}
+#header-navbar #donate-button:hover {
+  background-color: #cd222d;
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+/* --------main------- */
+#sub-body {
+  position: relative;
+  top: 85px;
+}
+
+/* carousel */
+#carousel-caritas .carousel-item-1 {
+  height: 681px;
+  min-height: 680px;
+  justify-content: flex-end;
+}
+#carousel-caritas .carousel-item-1 .carousel-image-1 {
+  width: 100%;
+  min-height: 680px;
+  position: absolute;
+  z-index: -1;
+}
+#carousel-caritas .carousel-item-1 .desc-carousel {
+  height: 520px;
+  width: 700px;
+  text-align: end;
+  position: absolute;
+  right: 0px;
+  bottom: -2px;
+  color: #5a6f80;
+  background-color: #ffffff;
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+}
+#carousel-caritas .carousel-item-1 .desc-carousel .desc-carousel-subdiv {
+  position: relative;
+  bottom: -350px;
+  right: 14%;
+}
+#carousel-caritas .carousel-item-1 .desc-carousel .desc-carousel-subdiv .desc-carousel-h1 {
+  font-size: 50px;
+  font-weight: bold;
+}
+#carousel-caritas .carousel-control-prev-icon-1,
+#carousel-caritas .carousel-control-next-icon-1 {
+  opacity: 0;
+  width: 80px;
+  height: 80px;
+  transition: 300ms;
+  background-color: #5a6f80;
+  background-size: 60%;
+  border-radius: 50px;
+}
+
+#carousel-caritas:hover .carousel-control-prev-1,
+#carousel-caritas:hover .carousel-control-next-1 {
+  opacity: 1;
+}
+#carousel-caritas:hover .carousel-control-prev-1 .carousel-control-prev-icon-1,
+#carousel-caritas:hover .carousel-control-prev-1 .carousel-control-next-icon-1,
+#carousel-caritas:hover .carousel-control-next-1 .carousel-control-prev-icon-1,
+#carousel-caritas:hover .carousel-control-next-1 .carousel-control-next-icon-1 {
+  opacity: 1;
+}
+#carousel-caritas:hover .carousel-control-prev-1 .carousel-control-prev-icon-1:hover,
+#carousel-caritas:hover .carousel-control-prev-1 .carousel-control-next-icon-1:hover,
+#carousel-caritas:hover .carousel-control-next-1 .carousel-control-prev-icon-1:hover,
+#carousel-caritas:hover .carousel-control-next-1 .carousel-control-next-icon-1:hover {
+  background-color: #cd222d;
+}
+
+/* welcome-section */
+.welcome-section {
+  position: relative;
+  top: 85px;
+}
+.welcome-section #container-welcome-box {
+  flex-wrap: wrap;
+}
+.welcome-section #container-welcome-box .welcome-box {
+  max-width: 15%;
+  border-radius: 30px;
+  float: left;
+  flex-direction: column;
+  font-size: 24px;
+  transition: all 500ms;
+}
+.welcome-section #container-welcome-box .welcome-box .welcome-image {
+  height: 128px;
+  width: 128px;
+  transition: 400ms;
+}
+.welcome-section .welcome-box:hover {
+  box-shadow: #00000059 0px 5px 15px;
+}
+.welcome-section .welcome-box:hover .welcome-image {
+  scale: 0.8;
+}
+
+/* our-story-section */
+#our-story {
+  background-color: #f0f8ff;
+}
+
+.our-story {
+  background-color: #f0f8ff;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: "images images story story" "images images mission stats";
+}
+.our-story h1 {
+  font-size: 45px;
+  font-weight: 600;
+}
+.our-story p {
+  font-size: 17px;
+}
+.our-story .our-image {
+  grid-area: images;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 5% !important;
+}
+.our-story .our-image .our-image-img {
+  border-radius: 5% !important;
+  object-fit: cover;
+  margin: 0 -50%;
+}
+.our-story .our-story-def {
+  grid-area: story;
+}
+.our-story .our-mission {
+  grid-area: mission;
+}
+.our-story .our-mission .bi-check {
+  background-color: #f0f8ff;
+}
+.our-story .our-stats {
+  grid-area: stats;
+  padding: 40px 70px;
+  text-align: left;
+}
+.our-story .our-stats .h1-stat {
+  font-size: 52px;
+  font-weight: bold;
+  line-height: 60px;
+  letter-spacing: 2px;
+}
+.our-story .our-stats .h2-stat {
+  font-size: 18px;
+}
+
+/* staff-section */
+.staff-section {
+  justify-content: center;
+  padding: 100px 0 150px 0;
+}
+.staff-section .image-staff {
+  width: 350px;
+  height: 400px;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 20px;
+}
+.staff-section .image-staff img {
+  margin: -20% 0;
+}
+.staff-section .staff-desc {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.staff-section .staff-desc h1 {
+  font-size: 46px;
+}
+.staff-section .staff-desc h5 {
+  font-weight: normal;
+}
+.staff-section .staff-desc ul li a {
+  padding: 9px 12px;
+  border-radius: 100px;
+  font-size: 14px;
+  position: relative;
+  top: -10px;
+  transition: 300ms;
+}
+.staff-section .staff-desc ul li a:hover {
+  background-color: #cd222d !important;
+}
+
+/* separator-banner-section */
+#separator-banner-section-div {
+  background-color: #f0f8ff;
+  overflow: hidden;
+}
+#separator-banner-section-div .row-separator {
+  max-height: 100px;
+}
+#separator-banner-section-div .row-separator #circle-separator-banner-1 {
+  position: relative;
+  top: -100px;
+  left: -2%;
+  background: #cd222d;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+#separator-banner-section-div .row-separator #circle-separator-banner-2 {
+  position: relative;
+  bottom: -50px;
+  left: 44%;
+  background: #f0f8ff;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  border: #cd222d 20px solid;
+}
+#separator-banner-section-div #separator-banner-section {
+  max-height: 110px;
+  font-size: 16px;
+}
+#separator-banner-section-div #separator-banner-section .btn {
+  padding: 12px 20px;
+  border-radius: 200px;
+  font-size: 18px !important;
+  transition: 300ms;
+}
+#separator-banner-section-div #separator-banner-section .btn:hover {
+  background-color: #cd222d;
+}
+#separator-banner-section-div #separator-banner-section #impact-banner-section {
+  margin-left: 7%;
+}
+#separator-banner-section-div #separator-banner-section #donator-banner-section {
+  width: 45%;
+}
+
+/* Our-Causes-Section */
+#our-causes-section #card-container-our-causes-section .card-our-causes-section {
+  width: 32%;
+  border: 0px;
+  border-radius: 25px;
+  overflow: hidden;
+  transition: 300ms;
+}
+#our-causes-section #card-container-our-causes-section .card-our-causes-section .card-text {
+  font-size: 17px;
+}
+#our-causes-section #card-container-our-causes-section .card-our-causes-section .progress {
+  height: 5px;
+}
+#our-causes-section #card-container-our-causes-section .card-our-causes-section .card-footer {
+  transition: 300ms;
+  cursor: pointer;
+}
+#our-causes-section #card-container-our-causes-section .card-our-causes-section .card-footer:hover {
+  background-color: #cd222d !important;
+}
+#our-causes-section #card-container-our-causes-section .card-our-causes-section:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Volunteer Section */
+#volunteer-section #volunteer-div #volunteer-form {
+  border-radius: 20px;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup {
+  width: 100%;
+  margin: 0;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup .formu-div {
+  width: 47%;
+  margin-top: 20px;
+  background-color: #f0f8ff;
+  border-radius: 5px;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup .formu-div input {
+  padding: 15px 0px;
+  border: none;
+  background-color: #f0f8ff;
+  outline: none;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup .formu-div #text-input-file::before {
+  content: "Sube tu CV";
+  position: absolute;
+  margin-top: 15px;
+  cursor: pointer;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup .formu-div #input-file {
+  background-color: #cd222d;
+  opacity: 0;
+  display: inline-block;
+  cursor: pointer;
+}
+#volunteer-section #volunteer-div #volunteer-form #formu-div-sup #symbol-upload {
+  position: relative;
+  right: 8%;
+  align-self: center;
+}
+#volunteer-section #volunteer-div #volunteer-form textarea {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0f8ff;
+}
+#volunteer-section #volunteer-div #formu-btn {
+  padding: 14px 0px;
+  border-radius: 30px;
+  transition: 300ms;
+  font-weight: bold;
+}
+#volunteer-section #volunteer-div #formu-btn:hover {
+  background-color: #cd222d;
+}
+#volunteer-section #formu-div-file {
+  cursor: pointer;
+}
+#volunteer-section #about-volunteer-div {
+  align-self: center;
+}
+#volunteer-section #about-volunteer-div img {
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/* News-Section */
+#news-div-sup #news-div .new-article {
+  padding-top: 50px;
+}
+#news-div-sup #news-div .new-article .news-block-top {
+  overflow: hidden;
+  border-radius: 25px !important;
+}
+#news-div-sup #news-div .new-article .news-category-block a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+}
+#news-div-sup #news-div .new-article h3 {
+  cursor: pointer;
+  transition: 200ms;
+}
+#news-div-sup #news-div .new-article h3:hover {
+  color: #cd222d;
+}
+#news-div-sup #news-div .new-article p {
+  color: #808080;
+}
+#news-div-sup #news-bar {
+  margin-top: 220px;
+  width: 36%;
+}
+#news-div-sup #news-bar #news-search {
+  border-radius: 6px;
+  background-color: #f0f8ff;
+}
+#news-div-sup #news-bar #news-search input {
+  background-color: #f0f8ff;
+  border: 0px #f0f8ff;
+  font-size: 18px;
+  outline: none;
+}
+#news-div-sup #news-bar #news-search i {
+  position: relative;
+  right: 2%;
+  align-self: center;
+}
+#news-div-sup #news-bar #news-recents-news img {
+  border-radius: 10px;
+}
+#news-div-sup #news-bar #news-recents-news h6 a {
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 200ms;
+}
+#news-div-sup #news-bar #news-recents-news h6 a:hover {
+  color: #cd222d;
+}
+#news-div-sup #news-bar #news-recents-news p {
+  color: #888888;
+  font-size: 17px;
+}
+#news-div-sup #news-bar #news-categories #categories-list {
+  flex-direction: column;
+}
+#news-div-sup #news-bar #news-categories #categories-list a {
+  text-decoration: none;
+  color: #5a6f80;
+  margin-top: 7px;
+  transition: 300ms;
+}
+#news-div-sup #news-bar #news-categories #categories-list a span {
+  font-size: 10px;
+  font-weight: normal;
+}
+#news-div-sup #news-bar #news-categories #categories-list a:hover {
+  color: #cd222d;
+}
+#news-div-sup #news-bar #news-tags a {
+  display: inline-block;
+  padding: 5px 12px;
+  margin: 5px 10px;
+  color: #5a6f80;
+  border: #5a6f802d solid 1px;
+  border-radius: 17px;
+  text-decoration: none;
+  transition: 200ms;
+}
+#news-div-sup #news-bar #news-tags a:hover {
+  border: #5a6f80 solid 1px;
+}
+#news-div-sup #news-bar #new-newsletter-form {
+  background-color: #f0f8ff;
+}
+#news-div-sup #news-bar #new-newsletter-form input {
+  border: none;
+  outline: none !important;
+}
+#news-div-sup #news-bar #new-newsletter-form button {
+  padding: 12px 10px;
+  font-weight: 700;
+  border-radius: 24px;
+  background-color: #597081;
+  transition: 300ms;
+}
+#news-div-sup #news-bar #new-newsletter-form button:hover {
+  background-color: #cd222d;
+}
+
+/* Contact-section */
+#contact-section {
+  background-color: #f0f8ff;
+}
+#contact-section #contact-info-wrap h2 {
+  font-size: 46px;
+}
+#contact-section #contact-info-wrap img {
+  width: 65px;
+  height: 65px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+#contact-section #contact-info-wrap .contact-info {
+  border-top: #8080801a 1px solid;
+}
+#contact-section #contact-info-wrap .contact-info a {
+  text-decoration: none;
+  color: #597081;
+}
+#contact-section #contact-info-wrap h5 {
+  font-size: 24px;
+}
+#contact-section #contact-info-wrap button {
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 10px 13px;
+  transition: 300ms;
+}
+#contact-section #contact-info-wrap button:hover {
+  background-color: #cd222d;
+}
+#contact-section .contact-form h2 {
+  font-size: 46px;
+}
+#contact-section .contact-form p {
+  color: #597081;
+}
+#contact-section .contact-form p a {
+  text-decoration: none;
+  color: #597081;
+}
+#contact-section button {
+  border-radius: 30px;
+  font-size: 18px;
+  padding: 10px 18px;
+  transition: 300ms;
+}
+#contact-section button:hover {
+  background-color: #cd222d;
+}
+
+/* footer */
+.site-footer {
+  background-color: #44525d;
+}
+.site-footer img {
+  height: 100px;
+}
+.site-footer div ul li {
+  list-style-type: none;
+}
+.site-footer div ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 300ms;
+  scroll-behavior: smooth;
+}
+.site-footer div ul li a:hover {
+  color: #cd222d;
+}
+.site-footer div p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.site-footer button {
+  background-color: #597081;
+  border-radius: 30px;
+  font-size: 15px;
+  padding: 10px 18px;
+  transition: 300ms;
+}
+.site-footer button:hover {
+  background-color: #cd222d;
+}
+.site-footer .site-footer-bottom {
+  height: 90px;
+}
+.site-footer .site-footer-bottom ul {
+  height: 35px;
+}
+.site-footer .site-footer-bottom div ul li {
+  background-color: #44525d;
+  padding: 10px 13px;
+  margin-right: 4%;
+  border-radius: 100%;
+  align-self: center;
+  transition: 300ms;
+}
+.site-footer .site-footer-bottom div ul li:hover {
+  background-color: #cd222d;
+}
+
+/* --------------- Responsive ------------- */
+@media (max-width: 1126px) {
+  #about-li,
+#contact-li {
+    display: none;
+  }
+
+  #carousel-caritas .carousel-item-1 .carousel-image-1 {
+    object-fit: cover;
+    object-position: 20%;
+  }
+  #carousel-caritas .carousel-item-1 .desc-carousel {
+    height: 400px;
+    width: 500px;
+  }
+  #carousel-caritas .carousel-item-1 .desc-carousel .desc-carousel-subdiv {
+    bottom: -280px;
+    right: 14%;
+  }
+  #carousel-caritas .carousel-item-1 .desc-carousel .desc-carousel-subdiv .desc-carousel-h1 {
+    font-size: 40px;
+  }
+  #carousel-caritas .carousel-control-prev-icon-1,
+#carousel-caritas .carousel-control-next-icon-1 {
+    width: 65px;
+    height: 65px;
+  }
+
+  .welcome-section #container-welcome-box .welcome-box {
+    max-width: 40%;
+    border-radius: 30px;
+    font-size: 22px;
+  }
+  .welcome-section #container-welcome-box .welcome-box .welcome-image {
+    height: 100px;
+    width: 100px;
+  }
+
+  .our-story {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas: "images images" "images images" "story story" "mission stats";
+  }
+  .our-story .our-image .our-image-img {
+    object-fit: cover;
+    max-height: none;
+  }
+
+  #separator-banner-section-div #p-donacion {
+    display: none;
+  }
+  #separator-banner-section-div #impact-banner-section {
+    font-size: 28px !important;
+  }
+
+  #volunteer-section #volunteer-div #volunteer-form #formu-div-sup .formu-div {
+    width: 100vw;
+    margin-top: 20px;
+  }
+  #volunteer-section #volunteer-div #volunteer-form #formu-div-sup #symbol-upload {
+    right: 0%;
+    justify-self: end;
+  }
+  #volunteer-section #about-volunteer-div {
+    margin-top: 150px !important;
+    margin-bottom: 0px !important;
+  }
+  #volunteer-section #about-volunteer-div img {
+    height: 250px;
+    width: 250px;
+  }
+
+  #news-div-sup #news-bar {
+    margin-top: 15vh;
+  }
+  #news-div-sup #news-bar #news-search #symbol-find {
+    right: 5%;
+    justify-self: end;
+  }
+  #news-div-sup #news-bar #news-categories #categories-list {
+    flex-direction: column;
+  }
+
+  #li-footer {
+    padding-left: 0px !important;
+  }
+}
+@media (max-width: 768px) {
+  .staff-section {
+    padding: 50px 0 75px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .staff-section .image-staff {
+    margin: 0 auto !important;
+  }
+
+  #separator-banner-section-div .row-separator #circle-separator-banner-1 {
+    width: 150px;
+    height: 150px;
+  }
+  #separator-banner-section-div .row-separator #circle-separator-banner-2 {
+    width: 80px;
+    height: 80px;
+  }
+
+  #our-causes-section {
+    padding: 5px 0px !important;
+  }
+  #our-causes-section #card-container-our-causes-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #our-causes-section #card-container-our-causes-section .card-our-causes-section {
+    width: 90%;
+    margin-bottom: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #our-causes-section #card-container-our-causes-section .card-our-causes-section .card-text {
+    font-size: 16px;
+  }
+
+  #volunteer-section {
+    flex-direction: column-reverse;
+    padding: 0 40px;
+  }
+  #volunteer-section #volunteer-div #volunteer-div-h1 {
+    display: none;
+  }
+  #volunteer-section #about-volunteer-div {
+    margin-top: 0 !important;
+  }
+  #volunteer-section #about-volunteer-div img {
+    height: 300px;
+    width: 300px;
+  }
+
+  #news-div-sup {
+    flex-direction: column;
+  }
+  #news-div-sup #news-bar {
+    margin-top: 5vh;
+    width: 100%;
+  }
+
+  .site-footer-bottom {
+    height: 180px !important;
+  }
+}
+@media (max-width: 576px) {
+  #sit-header-sub {
+    padding-top: 5px;
+    min-height: 55px;
+    flex-direction: column;
+  }
+
+  #web-name {
+    display: none;
+  }
+
+  #carousel-caritas .carousel-control-prev-icon-1,
+#carousel-caritas .carousel-control-next-icon-1 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .our-story {
+    grid-template-columns: 100%;
+    grid-template-rows: 0.5fr 0.8fr 0.8fr 0.8fr 0.8fr;
+    grid-template-areas: "images" "images" "story" "mission" "stats";
+  }
+  .our-story h1 {
+    font-size: 30px;
+  }
+  .our-story .our-image {
+    height: 500px;
+  }
+  .our-story .our-image .our-image-img {
+    object-fit: cover;
+    max-height: none;
+  }
+  .our-story .our-stats {
+    text-align: center;
+  }
+
+  #separator-banner-section-div {
+    display: none;
+  }
+
+  #our-causes-section {
+    background-color: #f0f8ff;
+  }
+}

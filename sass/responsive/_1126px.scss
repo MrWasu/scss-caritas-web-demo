@@ -1,0 +1,137 @@
+@media (max-width: 1126px) {
+
+    #about-li,
+    #contact-li {
+        display: none;
+    }
+
+    #carousel-caritas {
+
+        .carousel-item-1 {
+            .carousel-image-1 {
+                object-fit: cover;
+                object-position: 20%;
+            }
+
+            .desc-carousel {
+
+                height: 400px;
+                width: 500px;
+
+                .desc-carousel-subdiv {
+                    bottom: -280px;
+                    right: 14%;
+
+                    .desc-carousel-h1 {
+                        font-size: 40px;
+                    }
+                }
+            }
+        }
+
+        .carousel-control-prev-icon-1,
+        .carousel-control-next-icon-1 {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    .welcome-section {
+
+        #container-welcome-box {
+
+            .welcome-box {
+                max-width: 40%;
+                border-radius: 30px;
+                font-size: 22px;
+
+                .welcome-image {
+                    height: 100px;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .our-story {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 25% 25% 25% 25%;
+
+        grid-template-areas:
+            "images images"
+            "images images"
+            "story story"
+            "mission stats";
+
+        .our-image {
+            .our-image-img {
+                object-fit: cover;
+                max-height: none;
+            }
+        }
+    }
+
+    #separator-banner-section-div {
+        #p-donacion {
+            display: none;
+        }
+
+        #impact-banner-section {
+            font-size: 28px !important;
+        }
+    }
+
+    #volunteer-section {
+        #volunteer-div {
+            #volunteer-form {
+                #formu-div-sup {
+
+                    .formu-div {
+                        width: 100vw;
+                        margin-top: 20px;
+                    }
+
+                    #symbol-upload {
+                        right: 0%;
+                        justify-self: end;
+                    }
+                }
+            }
+        }
+
+        #about-volunteer-div {
+            margin-top: 150px !important;
+            margin-bottom: 0px !important;
+
+            img {
+                height: 250px;
+                width: 250px;
+            }
+        }
+    }
+
+    #news-div-sup {
+        #news-bar {
+            margin-top: 15vh;
+
+            #news-search {
+
+                #symbol-find {
+                    right: 5%;
+                    justify-self: end;
+                }
+            }
+
+            #news-categories {
+
+                #categories-list {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #li-footer {
+        padding-left: 0px !important;
+    }
+}
